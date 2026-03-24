@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Manrope:wght@400;500;700&family=Lexend:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Lexend", sans-serif;
+  
+  --color-primary: #003164;
+  --color-secondary: #ffca7d;
+  --color-accent: #7e5714;
+  --color-surface: #f8f9fa;
+}
+
+.skew-button { transform: skewX(-12deg); }
+.skew-fix { transform: skewX(12deg); display: inline-block; }
+
+@layer base {
+  body {
+    @apply font-body bg-surface text-slate-900;
+  }
+}
